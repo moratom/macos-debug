@@ -14,7 +14,7 @@ jobs:
           tmate -S /tmp/tmate.sock wait tmate-ready
           tmate -S /tmp/tmate.sock display -p '#{tmate_ssh}'
           tmate -S /tmp/tmate.sock display -p '#{tmate_web}'
-      
+
       - name: Keep runner alive for debugging
-        run: sleep infinity
+        run: sleep 3600
 
